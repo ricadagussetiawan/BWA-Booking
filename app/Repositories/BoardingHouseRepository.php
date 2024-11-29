@@ -17,6 +17,7 @@
 namespace App\Repositories;
 
 use App\Interfaces\BoardingHouseRepositoryInterface;
+use App\Models\BoardingHouse;
 
 class BoardingHouseRepository implements BoardingHouseRepositoryInterface
 {

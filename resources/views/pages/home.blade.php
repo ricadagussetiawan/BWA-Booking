@@ -40,9 +40,54 @@ class="absolute top-0 w-full h-[280px] rounded-bl-[75px] bg-[linear-gradient(180
             </div>
         </div>
 
-
-
-        
+        <section id="Popular" class="flex flex-col gap-4">
+            <div class="flex items-center justify-between px-5">
+                <h2 class="font-bold">Popular Kos</h2>
+                <a href="#">
+                    <div class="flex items-center gap-2">
+                        <span>See all</span>
+                        <img src="assets/images/icons/arrow-right.svg" class="w-6 h-6 flex shrink-0" alt="icon">
+                    </div>
+                </a>
+            </div>
+            <div class="swiper w-full overflow-x-hidden">
+                <div class="swiper-wrapper">
+                    @foreach ($popularBoardingHouses as $boardingHouse)
+                    <div class="swiper-slide !w-fit">
+                        <a href="details.html" class="card">
+                            <div
+                                class="flex flex-col w-[250px] shrink-0 rounded-[30px] border border-[#F1F2F6] p-4 pb-5 gap-[10px] hover:border-[#91BF77] transition-all duration-300">
+                                <div class="flex w-full h-[150px] shrink-0 rounded-[30px] bg-[#D9D9D9] overflow-hidden">
+                                    <img src="assets/images/thumbnails/kos-1.png" class="w-full h-full object-cover"
+                                        alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-3">
+                                    <h3 class="font-semibold text-lg leading-[27px] line-clamp-2 min-h-[54px]">Tumbuh
+                                        Tentram Berada Rumah Nenek</h3>
+                                    <hr class="border-[#F1F2F6]">
+                                    <div class="flex items-center gap-[6px]">
+                                        <img src="assets/images/icons/location.svg" class="w-5 h-5 flex shrink-0"
+                                            alt="icon">
+                                        <p class="text-sm text-ngekos-grey">Singapore City</p>
+                                    </div>
+                                    <div class="flex items-center gap-[6px]">
+                                        <img src="assets/images/icons/3dcube.svg" class="w-5 h-5 flex shrink-0"
+                                            alt="icon">
+                                        <p class="text-sm text-ngekos-grey">In Hotels</p>
+                                    </div>
+                                    <div class="flex items-center gap-[6px]">
+                                        <img src="assets/images/icons/profile-2user.svg" class="w-5 h-5 flex shrink-0"
+                                            alt="icon">
+                                        <p class="text-sm text-ngekos-grey">4 People</p>
+                                    </div>
+                                    <hr class="border-[#F1F2F6]">
+                                    <p class="font-semibold text-lg text-ngekos-orange">Rp 4.593.444<span
+                                            class="text-sm text-ngekos-grey font-normal">/bulan</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>
