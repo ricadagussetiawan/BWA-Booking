@@ -37,7 +37,7 @@ class BoardingHouseRepository implements BoardingHouseRepositoryInterface
 
     public function getPopularBoardingHouses($limit = 5)
     {
-        return BoardingHouse::withCount('transactions')->orderBy('transactions_count', 'desc')->take($limit)->get();
+        // return BoardingHouse::withCount('transactions')->orderBy('transactions_count', 'desc')->take($limit)->get();
     }
 
 
