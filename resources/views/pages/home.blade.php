@@ -31,7 +31,7 @@ class="absolute top-0 w-full h-[280px] rounded-bl-[75px] bg-[linear-gradient(180
                             </div>
                             <div class="flex flex-col gap-[2px]">
                                 <h3 class="font-semibold">{{ $category->name }}</h3>
-                                <p class="text-sm text-ngekos-grey">1,304 Kos</p>
+                                <p class="text-sm text-ngekos-grey">{{ $category->boardingHouses->count() }}</p>
                             </div>
                         </div>
                     </a>
@@ -40,7 +40,7 @@ class="absolute top-0 w-full h-[280px] rounded-bl-[75px] bg-[linear-gradient(180
             </div>
         </div>
 
-        <!-- <section id="Popular" class="flex flex-col gap-4">
+        <section id="Popular" class="flex flex-col gap-4">
             <div class="flex items-center justify-between px-5">
                 <h2 class="font-bold">Popular Kos</h2>
                 <a href="#">
@@ -52,7 +52,7 @@ class="absolute top-0 w-full h-[280px] rounded-bl-[75px] bg-[linear-gradient(180
             </div>
             <div class="swiper w-full overflow-x-hidden">
                 <div class="swiper-wrapper">
-                    @foreach ($popularBoardingHouses as $boardingHouse)
+                    @foreach ($boardingHouses as $boardingHouse)
                     <div class="swiper-slide !w-fit">
                         <a href="details.html" class="card">
                             <div
@@ -89,7 +89,7 @@ class="absolute top-0 w-full h-[280px] rounded-bl-[75px] bg-[linear-gradient(180
                     @endforeach
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section id="Cities" class="flex flex-col p-5 gap-4 bg-[#F5F6F8] mt-[30px]">
             <div class="flex items-center justify-between">

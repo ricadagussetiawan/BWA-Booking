@@ -6,4 +6,3 @@ interface CategoryRepositoryInterface
 {
     public function getAllCategories();
 }
-
