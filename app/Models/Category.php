@@ -16,7 +16,7 @@ class Category extends Model
         'slug'
     ];
 
-    public function BoardingHouse()
+    public function boardingHouses()
     {
         return $this->hasMany(BoardingHouse::class);
         
